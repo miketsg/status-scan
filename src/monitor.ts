@@ -8,7 +8,7 @@ import {
   ChangeEvent,
 } from "./db";
 import { computeHash } from "./utils";
-import { sendNotifications } from "./notifications";
+import { sendEmail } from "./send-email";
 
 export async function checkWebsite(url: string): Promise<void> {
   console.log(`\n[${new Date().toISOString()}] Checking ${url}...`);
@@ -54,7 +54,7 @@ export async function checkWebsite(url: string): Promise<void> {
       );
 
       // Send notifications
-      await sendNotifications(url, changeEvent);
+      await sendEmail(url, changeEvent);
     } else {
       // No change - update the lastChecked time
       await websiteStatesCollection.updateOne(
