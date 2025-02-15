@@ -1,0 +1,30 @@
+{
+  "name": "status-scan",
+  "version": "1.0.0",
+  "description": "A background monitoring process for tracking website changes using Node.js and TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test": "jest --coverage"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.13.0",
+    "twilio": "^5.4.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
