@@ -55,12 +55,16 @@ status-scan is a lightweight website monitoring system built with TypeScript. It
    ```
 
 2. Update the `.env` file:
-   Replace the placeholder values with your actual credentials:
-   - `SENDGRID_API_KEY`
-   - `TWILIO_ACCOUNT_SID`
-   - `TWILIO_AUTH_TOKEN`
+   - `URLS`
    - `MONGODB_URI`
    - `MONGODB_DB`
+   - `SENDGRID_API_KEY`
+   - `SEND_GRID_SENDER`
+   - `EMAIL_RECIPIENTS`
+   - `TWILIO_ACCOUNT_SID`
+   - `TWILIO_AUTH_TOKEN`
+   - `TWILIO_FROM`
+   - `TWILIO_TO`
 
 ## Usage
 
