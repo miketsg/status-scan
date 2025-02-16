@@ -1,6 +1,6 @@
 # Status-scan
 
-status-scan is a lightweight website monitoring system built with TypeScript. It periodically checks specified websites for content changes, records metrics (HTTP status, loading time, and content hash), logs events, and notifies users via email (SendGrid) and SMS (Twilio). Additionally, it persists historical change events in MongoDB and includes unit tests powered by Jest.
+status-scan is a lightweight website monitoring system built with TypeScript. It periodically checks specified websites for content changes, records metrics (HTTP status, loading time, and content hash), logs events, and persists historical change events in MongoDB.
 
 
 ## Table of Contents
